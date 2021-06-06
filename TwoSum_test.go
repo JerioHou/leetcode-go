@@ -9,8 +9,8 @@ func twoSum(nums []int, target int) []int {
 	// key得数组的值， value为数组下标
 	var valueMap = make(map[int]int)
 	for i, v := range nums {
-		if index, ok := valueMap[target-v]; ok {
-			return []int{i, index}
+		if value, ok := valueMap[target-v]; ok {
+			return []int{i, value}
 		} else {
 			valueMap[v] = i
 		}
