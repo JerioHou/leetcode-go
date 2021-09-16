@@ -10,7 +10,6 @@ import (
 */
 
 func longestPalindrome(s string) string {
-
 	n := len(s)
 	if n == 1 {
 		return s
