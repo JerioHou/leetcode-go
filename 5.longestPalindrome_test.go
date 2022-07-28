@@ -63,7 +63,7 @@ func TestLongestPalindrome(t *testing.T) {
 */
 func CreateSlice(row, col int) [][]bool {
 	flag := make([][]bool, row)
-	for k, _ := range flag {
+	for k := range flag {
 		flag[k] = make([]bool, col)
 	}
 	return flag
